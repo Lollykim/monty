@@ -4,7 +4,7 @@
  * @stack: linked lists for monty stack
  * @line_number: number of line opcode occurs on
  */
-void _push(stack_t **stack, unsigned int line_number)
+void push(stack_t **stack, unsigned int line_number)
 {
 	stack_t *new;
 	char *arg;
@@ -45,7 +45,7 @@ void _push(stack_t **stack, unsigned int line_number)
  * @stack: pointer to linked list stack
  * @line_number: number of line opcode occurs on
  */
-void _pall(stack_t **stack, __attribute__ ((unused))unsigned int line_number)
+void pall(stack_t **stack, __attribute__ ((unused))unsigned int line_number)
 {
 	stack_t *runner;
 
@@ -62,7 +62,7 @@ void _pall(stack_t **stack, __attribute__ ((unused))unsigned int line_number)
  * @line_number: number of line opcode occurs on
  *
  */
-void _pint(stack_t **stack, unsigned int line_number)
+void pint(stack_t **stack, unsigned int line_number)
 {
 	stack_t *runner;
 
@@ -80,7 +80,7 @@ void _pint(stack_t **stack, unsigned int line_number)
  * @line_number: number of line opcode occurs on
  *
  */
-void _swap(stack_t **stack, unsigned int line_number)
+void swap(stack_t **stack, unsigned int line_number)
 {
 	stack_t *runner;
 	int tmp;
@@ -100,7 +100,7 @@ void _swap(stack_t **stack, unsigned int line_number)
  * @stack: pointer to linked list stack
  * @line_number: number of line opcode occurs on
  */
-void _pop(stack_t **stack, unsigned int line_number)
+void pop(stack_t **stack, unsigned int line_number)
 {
 	if (*stack == NULL)
 	{
